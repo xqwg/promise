@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    new Promise((resolve,reject)=>{
+        console.log(11)
+        new Promise((res,rej)=>{
+            res(33)
+        }).then(
+            value=>console.log(value)
+        )//.then是同步执行的，
+        //return undefined
+    }).then(
+        console.log(22)
+    )
+</script>
